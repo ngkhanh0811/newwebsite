@@ -1,0 +1,9 @@
+ul li{
+    background-color: slategray;
+}
+p.one{
+    background-color: blanchedalmond;
+}
+a:hover{
+    color: brown;
+}
