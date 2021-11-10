@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo tài khoản Facebook</title>
+    <style>
+        body{
+            border: aliceblue 1px solid;
+            width: 400px;
+        }
+        div{
+            padding-bottom: 10px;
+        }
+        .name{
+            float: left;
+            text-align: right;
+            width: 100px;
+            padding-right: 10px;
+        }
+        legend{
+            background-color: beige;
+            border: black 1px solid;
+            border-radius: 5px;
+            width: auto;
+        }
+        .otp{
+            float: left;
+            text-align: right;
+            width: 200px;
+            padding-right: 10px;
+        }
+        fieldset{
+            width: 350px;
+        }
+        #submit{
+            width: 100px;
+            background-color: cornflowerblue;
+            border: black 1px solid;
+            border-radius: 5px;
+        }
+        #submit:hover{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+<legend>Tạo tài khoản</legend>
+
+<div>
+<label for="firstname" class="name">Tên</label>
+<input type="text" id="firstname" name="firstname"/>
+</div>
+<div>
+<label for="lastname" class="name">Họ</label>
+<input type="text" id="lastname" name="lastname">
+</div>
+        <div class="gioitinh">
+            <span class="name">Giới tính</span>
+            <input type="radio" name="gender" id="male" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" value="Nu">
+            <label for="female">Nữ</label>
+            <input type="radio" name="no" id="no" value="no">
+            <label for="no">Không rõ</label>
+        </div>
+        <div class="email">
+            <input type="text" id="email" name="email" placeholder="Email"/>
+        </div>
+        <div class="password">
+            <input type="password" name="password" placeholder="Mật khẩu"/>
+        </div>
+            <div class="password">
+            <input type="password" name="password" placeholder="Nhập lại mật khẩu"/>
+        </div>
+        <div class="otp">
+            <input type="number" id="otp" name="otp" placeholder="Nhập OTP"/>
+        </div>
+        <div class="register">
+            <input type="submit" value="register" id="submit" />
+        </div>
+        </fieldset>
+</form>
+</body>
+</html>
