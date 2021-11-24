@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title> 
+		<link type="text/css" href="styles/my_style.css" rel="stylesheet" />
+		<style>
+			body{
+				background-color: black;
+			}
+			p{
+				color: #33FF66;
+				font-family: Tahoma, Verdana, Arial;
+				font-size: 12px;
+			}
+
+			#top1{
+				position: relative;
+				z-index: 4;
+			}
+			#top{
+				position: absolute;
+				left: 191px;
+				top: 15px;
+				z-index: 4;
+			}
+			#container{
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				z-index: 0;
+			}
+			.lightning{
+				display: none;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				z-index: 0;
+			}
+			#frame{
+				position: absolute;
+				left: 100px;
+				top: 100px;
+				width: 545px;
+				height: 629px;
+				background-image: url("images/frame.png");
+				z-index: 3;
+				overflow: hidden;
+			}
+			#pic{
+				position: relative;
+				left: 91px;
+				top: 84px;
+				width: 367px;
+				height: 460px;
+				z-index: 2;
+				overflow: hidden;
+			}
+			.face{
+				position: relative;
+				left:0px;
+				top: 0px;
+				z-index: 1;
+			}
+			#head{
+				height:174px;
+			}
+			#nose{
+				height: 88px;
+			}
+			#eyes{
+				height: 81px;
+			}
+			#mouth{
+				height: 119px;
+			}
+
+		</style>
+		<script type="text/javascript" src="scripts/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="scripts/my_scripts.js"></script>
+	</head>
+	<body>
+	<header id="top">
+		<img id="top1" src="images/Monster_Mashup.png"/>
+		<p>Make your own monster face by clicking on the picture</p>
+	</header>
+		<div id="container">
+			<img class="lightning" id="lightning1" src="images/lightning-01.jpg"/>
+			<img class="lightning" id="lightning2" src="images/lightning-02.jpg"/>
+			<img class="lightning" id="lightning3" src="images/lightning-03.jpg"/>
+			<div id="frame">
+				<div id="pic">
+					<img class="face" id="head" src="images/headsstrip.jpg"/>
+					<img class="face" id="eyes" src="images/eyesstrip.jpg"/>
+					<img class="face" id="nose" src="images/nosesstrip.jpg"/>
+					<img class="face" id="mouth" src="images/mouthsstrip.jpg"/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
